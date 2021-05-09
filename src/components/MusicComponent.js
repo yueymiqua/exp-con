@@ -23,15 +23,17 @@ function MusicComponent() {
 
   return (
     <div className="music-component">
-      <h1 className="music-header">SUPERIOR SOUND</h1>
-      <p className="music-subtext">Experience live versions of your favorite songs.</p>
-      <button className="demo-button"><strong>SEE DEMO</strong></button>
-      <div className="audio-container">
-        <img src={speakerSvg} alt="speakerSvg"/>
-        <button 
-          className={`play-music-button ${!isPlaying?" playing":""}`}
-          onClick={handleClick}>{buttonText}
-        </button>
+      <div className="music-container">
+        <h1 className="music-header">SUPERIOR SOUND</h1>
+        <p className="music-subtext">Experience live versions of your favorite songs.</p>
+        <button className="demo-button"><strong>SEE DEMO</strong></button>
+        <div className="audio-container">
+          <img src={speakerSvg} alt="speakerSvg"/>
+          <button 
+            className={`play-music-button ${!isPlaying?" playing":""}`}
+            onClick={handleClick}>{buttonText}
+          </button>
+        </div>
       </div>
     </div>
   )

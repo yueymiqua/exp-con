@@ -10,9 +10,11 @@ function PricingLayout() {
       </div>
       <div className="plan-container">
         <div className="basic-plan">
-          <h2 className="subtext-font">BASIC</h2>
-          <h2 className="subtext-font basic-line">_____________</h2>
-          <h2 className="subtext-font basic-monthly">MONTHLY</h2>
+          <div>
+            <h2 className="subtext-font">BASIC</h2>
+            <h2 className="subtext-font basic-line">_____________</h2>
+            <h2 className="subtext-font basic-monthly">MONTHLY</h2>
+          </div>
           <h1 className="price-font basic-price">$9</h1>
           <ul className="list-container">
             <li className="subtext-font">Very good</li>
@@ -25,9 +27,11 @@ function PricingLayout() {
           <button className="select-plan basic"><strong>SELECT</strong></button>
         </div>
         <div className="advanced-plan">
-          <h2 className="subtext-font">ADVANCED</h2>
-          <h2 className="subtext-font advanced-line">_____________</h2>
-          <h2 className="subtext-font advanced-monthly">MONTHLY</h2>
+          <div>
+            <h2 className="subtext-font">ADVANCED</h2>
+            <h2 className="subtext-font advanced-line">_____________</h2>
+            <h2 className="subtext-font advanced-monthly">MONTHLY</h2>
+          </div>
           <h1 className="price-font advanced-price">$99</h1>
           <ul className="list-container">
             <li className="subtext-font">Very good</li>
@@ -40,9 +44,11 @@ function PricingLayout() {
           <button className="select-plan advanced"><strong>SELECT</strong></button>
         </div>
         <div className="pro-plan">
-          <h2 className="subtext-font">PRO</h2>
-          <h2 className="subtext-font pro-line">_____________</h2>
-          <h2 className="subtext-font pro-monthly">MONTHLY</h2>
+          <div>
+            <h2 className="subtext-font">PRO</h2>
+            <h2 className="subtext-font pro-line">_____________</h2>
+            <h2 className="subtext-font pro-monthly">MONTHLY</h2>
+          </div>
           <h1 className="price-font pro-price">$120</h1>
           <ul className="list-container">
             <li className="subtext-font">Very good</li>

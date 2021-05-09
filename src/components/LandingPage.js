@@ -11,7 +11,7 @@ function LandingPage() {
       <Slideshow/>
       <MusicComponent/>
       <FrontRowSeats/>
-      <PerksDarkTheme className="perks-dark-theme"/>
+      <PerksDarkTheme/>
       <Contact/>
     </div>
   );

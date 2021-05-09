@@ -12,7 +12,7 @@ $bg-color: #222;
 }
 
 .description {
-  font-size: 1.5rem;
+  font-size: 2vw;
 }
 
 .App {
@@ -64,7 +64,7 @@ $bg-color: #222;
 }
 
 .menuNav li:first-child {
-  margin-top: 7rem;
+  margin-top: 9vh;
 }
 
 .slideshow {
@@ -83,8 +83,8 @@ $bg-color: #222;
 
 .slide {
   display: inline-block;
-  margin-bottom: 30px;
-  border-radius: 40px;
+  //margin-bottom: 30px;
+  // border-radius: 40px;
   width: 100%;
 }
 
@@ -92,16 +92,16 @@ $bg-color: #222;
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: -150px;
+  margin-top: -18vh;
 }
 
 .slideshowDot {
   display: inline-block;
-  height: 15px;
-  width: 15px;
+  height: 1.5vw;
+  width: 1.5vw;
   border-radius: 50%;
   cursor: pointer;
-  margin: 5px 5px 0px;
+  margin: 0.5vw 0.5vw 0vw;
   background-color: grey;
 }
 
@@ -112,19 +112,19 @@ $bg-color: #222;
 .landing-page-header {
   position: relative;
   text-align: center;
-  margin-top: -180px;
+  margin-top: -28vh;
   color: white;
 }
 
 .main-header {
   margin: 0 auto;
-  font-size: 3rem;
+  font-size: 4vw;
 }
 
 .subtext {
   margin: 0 auto;
   max-width: 40vw;
-  font-size: 1.5rem;
+  font-size: 1.75vw;
 }
 
 [class*='btn-'] {
@@ -183,14 +183,14 @@ $bg-color: #222;
 }
 
 .button {
-  margin-top: -200px;
+  margin-top: -15vw;
   text-align: center;
 }
 
 .perks-button {
   text-align: right;
-  padding-top: 5vw;
-  padding-bottom: -5vw;
+  padding-top: 10vh;
+  padding-bottom: -10vh;
 }
 
 @keyframes mix {
@@ -225,35 +225,38 @@ a {
 }
 
 .music-component {
-  width: 90vw;
+  width: 100vw;
   height: 100vh;
-  padding-left: 10%;
   background-color: #fb3640;
   position: relative;
   text-align: left;
-  margin-top: -32px;
+  margin-top: -2.75vw;
+}
+
+.music-container {
+  margin-left: 8vw;
 }
 
 .music-header {
   padding-top: 35vh;
   color: white;
-  font-size: 3rem;
+  font-size: 4vw;
 }
 
 .music-subtext {
-  font-size: 2.5rem;
-  margin-top: -25px;
+  font-size: 3vw;
+  margin-top: -4vh;
   max-width: 40vw;
 }
 
 .demo-button {
   border-style: none;
-  border-radius: 25px;
-  padding: 15px;
+  border-radius: 2.5vw;
+  padding: 1.25vw;
   background: ivory;
   color: #fb3640;
-  font-size: 1rem;
-  margin-top: -20px;
+  font-size: 1.5vw;
+  margin-top: -4vh;
   cursor: pointer;
 }
 
@@ -270,8 +273,8 @@ a {
   padding: 4vh;
   background-color: #ce1212;
   color: white;
-  font-size: 2rem;
-  margin-top: -5vw;
+  font-size: 2vw;
+  margin-top: -10vh;
   margin-left: 57vw;
   cursor: pointer;
   max-width: 17vw;
@@ -297,36 +300,36 @@ img[alt='speakerSvg'] {
 }
 
 img[alt='front-row-1'] {
-  height: 450px;
-  width: 450px;
+  height: 70vh;
+  width: 35vw;
   border-radius: 50%;
 }
 .front-row-1 {
   position: relative;
-  margin-top: -200px;
-  padding-left: 100px;
+  margin-top: -32vh;
+  padding-left: 5vw;
 }
 
 img[alt='front-row-2'] {
-  height: 300px;
-  width: 300px;
+  height: 50vh;
+  width: 25vw;
   border-radius: 50%;
 }
 .front-row-2 {
   position: relative;
-  margin-top: -600px;
-  padding-left: 350px;
+  margin-top: -90vh;
+  padding-left: 25vw;
 }
 
 img[alt='front-row-3'] {
-  height: 400px;
-  width: 400px;
+  height: 60vh;
+  width: 30vw;
   border-radius: 50%;
 }
 .front-row-3 {
   position: relative;
-  padding-left: 925px;
-  margin-top: 50px;
+  padding-left: 75vw;
+  margin-top: 5vh;
   overflow: hidden;
 }
 
@@ -347,8 +350,8 @@ img[alt='front-row-3'] {
 }
 
 .text-container {
-  padding-top: 100px;
-  padding-bottom: 80px;
+  padding-top: 12vh;
+  padding-bottom: 10vh;
   padding-left: 10%;
   position: relative;
   text-align: left;
@@ -356,7 +359,7 @@ img[alt='front-row-3'] {
 }
 
 .list-container {
-  margin-top: -30px;
+  margin-top: -5vh;
   color: white;
 }
 
@@ -377,7 +380,7 @@ img[alt='front-row-3'] {
 }
 .basic {
   background-color: #fb3640;
-  font-size: 1em;
+  font-size: 1.5vw;
   color: white;
 }
 .basic:hover {
@@ -389,7 +392,7 @@ img[alt='front-row-3'] {
 }
 .advanced {
   background-color: #fea82f;
-  font-size: 1em;
+  font-size: 1.5vw;
   color: white;
 }
 .advanced:hover {
@@ -401,7 +404,7 @@ img[alt='front-row-3'] {
 }
 .pro {
   background-color: #3edbf0;
-  font-size: 1em;
+  font-size: 1.5vw;
   color: white;
 }
 .pro:hover {
@@ -411,7 +414,7 @@ img[alt='front-row-3'] {
 .basic-line,
 .advanced-line,
 .pro-line {
-  margin-top: -50px;
+  margin-top: -8vh;
 }
 
 .basic-monthly,
@@ -420,13 +423,13 @@ img[alt='front-row-3'] {
 .basic-price,
 .advanced-price,
 .pro-price {
-  margin-top: -20px;
+  margin-top: -3vh;
 }
 
 .select-plan {
-  width: 200px;
-  padding: 15px;
-  border-radius: 25px;
+  width: 20vw;
+  padding: 1vw;
+  border-radius: 2vw;
   cursor: pointer;
 }
 
@@ -441,7 +444,7 @@ img[alt='front-row-3'] {
   display: inline-block;
   max-width: 18vw;
   color: white;
-  padding: 0px 55px;
+  padding: 0px 4vw;
   text-align: left;
 }
 
@@ -450,26 +453,26 @@ img[alt='front-row-3'] {
 }
 
 .perks-line {
-  margin-top: -75px;
+  margin-top: -12vh;
 }
 
 .contact-container {
   background-color: #6a65d8;
-  margin-top: -35px;
+  margin-top: -6vh;
 }
 
 .email {
   margin-left: 10vw;
-  padding-top: 120px;
+  padding-top: 18vh;
   color: white;
-  font-size: 1.5rem;
+  font-size: 2vw;
 }
 
 .footer-name {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 12vh;
   color: white;
-  font-size: 2rem;
+  font-size: 2.5vw;
 }
 
 .copyright {
@@ -498,13 +501,13 @@ img[alt='front-row-3'] {
 }
 
 .text-container-dark {
-  padding-top: 100px;
-  padding-bottom: 80px;
+  padding-top: 16vh;
+  padding-bottom: 12vh;
   padding-left: 10%;
   position: relative;
   text-align: left;
   color: white;
-  margin-top: -100px;
+  margin-top: -15vh;
 }
 
 .front-row-seats-container {
@@ -518,24 +521,24 @@ img[alt='front-row-3'] {
 .front-row-header {
   position: relative;
   text-align: right;
-  padding-top: 200px;
-  padding-right: 150px;
-  font-size: 3rem;
+  padding-top: 30vh;
+  padding-right: 12vw;
+  font-size: 4vw;
   color: white;
 }
 
 .front-row-description {
   position: relative;
-  font-size: 2rem;
+  font-size: 2.5vw;
   color: black;
 }
 
 .front-row-button {
   position: relative;
-  font-size: 1rem;
+  font-size: 1.5vw;
   margin-right: 15vw;
-  width: 200px;
-  padding: 15px;
+  width: 16vw;
+  padding: 1.25vw;
   border-radius: 25px;
   border-style: none;
   color: #ffc93c;
