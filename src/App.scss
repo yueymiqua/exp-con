@@ -1,0 +1,374 @@
+$bg-color: #222;
+.header-font {
+  font-size: 3rem;
+}
+
+.subtext-font {
+  font-size: 2rem;
+}
+
+.price-font {
+  font-size: 5rem;
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+.App {
+  text-align: center;
+}
+
+.slideshow {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slideshowSlider {
+  white-space: noWrap;
+  transition: ease 1000ms;
+  z-index: -2;
+}
+
+.slide {
+  display: inline-block;
+  margin-bottom: 30px;
+  border-radius: 40px;
+  width: 100%;
+}
+
+.slideshowDots {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: -150px;
+}
+
+.slideshowDot {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 5px 5px 0px;
+  background-color: grey;
+}
+
+.slideshowDot.active {
+  background-color: purple;
+}
+
+.landing-page-header {
+  position: relative;
+  margin-top: -180px;
+  color: white;
+}
+
+.main-header {
+  margin: 0 auto;
+  font-size: 3rem;
+}
+
+.subtext {
+  margin: 0 auto;
+  max-width: 40vw;
+  font-size: 1.5rem;
+}
+
+[class*='btn-'] {
+  outline: 0;
+  border-radius: 50px;
+  font-size: 0.8em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 4px;
+  overflow: hidden;
+  position: relative;
+  padding: 2em 3em;
+  margin: 4em;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 500ms ease-in-out;
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+  }
+  &:hover,
+  &:focus {
+    background: rgba(255, 255, 255, 0.8);
+  }
+}
+
+[class*='btn-mix'] {
+  &::after {
+    background: $bg-color;
+    border-radius: 120px;
+    content: attr(data-text);
+    color: #fff;
+    padding: 1.6em 2.5em;
+    top: 0.4em;
+    left: 0.5em;
+    -moz-user-select: none;
+    user-select: none;
+    // user-drag: none;
+  }
+  &::before {
+    background: transparent;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 1em 2em 3em rgba(255, 50, 0, 0.5),
+      4em 0em 2em 2em rgba(155, 50, 0, 0.6),
+      -4em -2em 2em 2em rgba(255, 0, 150, 0.5),
+      -4em 2em 2em 4em rgba(0, 0, 150, 0.5),
+      0 -3em 2em 3em rgba(120, 250, 0, 0.5),
+      2em -1em 2em 2em rgba(50, 10, 200, 0.5);
+    width: 0;
+    height: 0;
+    animation: mix 5s linear infinite;
+  }
+}
+
+.button {
+  margin-top: -200px;
+}
+
+@keyframes mix {
+  30% {
+    box-shadow: 0 -1em 2em 3em rgba(255, 0, 200, 0.5),
+      4em -1em 2em 3em rgba(255, 50, 0, 0.8),
+      -4em 2em 3em 2em rgba(155, 200, 0, 0.5),
+      -4em -2em 2em 2em rgba(200, 0, 150, 0.6),
+      0 3em 2em 2em rgba(20, 250, 0, 0.5),
+      2em 1em 2em 2em rgba(50, 10, 250, 0.5);
+  }
+
+  60% {
+    box-shadow: 2em 1em 2em 3em rgba(55, 0, 200, 0.5),
+      3em 1em 2em 3em rgba(25, 150, 0, 0.6),
+      3em -2em 3em 3em rgba(155, 200, 0, 0.5),
+      -4em 2em 2em 3em rgba(200, 0, 50, 0.6),
+      0 -3em 2em 3em rgba(200, 250, 0, 0.5),
+      -2em 1em 2em 3em rgba(50, 210, 250, 0.6);
+  }
+}
+
+// html,
+// body {
+//   width: 100%;
+//   height: 100%;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   text-rendering: optimizelegibility;
+// }
+
+body {
+  background: $bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.music-component {
+  width: 100vw;
+  height: 100vh;
+  padding-left: 10%;
+  background-color: #fb3640;
+  position: relative;
+  text-align: left;
+  margin-top: -32px;
+}
+
+.music-header {
+  padding-top: 35vh;
+  color: white;
+  font-size: 3rem;
+}
+
+.music-subtext {
+  font-size: 2.5rem;
+  margin-top: -25px;
+  max-width: 40vw;
+}
+
+.demo-button {
+  border-radius: 30px;
+  padding: 20px;
+  background: ivory;
+  color: #fb3640;
+  font-size: 1rem;
+  margin-top: -20px;
+  cursor: pointer;
+}
+
+.audio-container {
+  z-index: 1;
+}
+.play-music-button {
+  border-radius: 50%;
+  padding: 4vh;
+  background-color: orangered;
+  color: white;
+  font-size: 2rem;
+  margin-top: -5vw;
+  margin-left: 57vw;
+  cursor: pointer;
+  max-width: 17vw;
+}
+
+.playing {
+  background-color: green;
+}
+
+img[alt='speakerSvg'] {
+  position: relative;
+  width: 40vw;
+  height: auto;
+  margin-top: -80vh;
+  margin-left: 45vw;
+  margin-bottom: 5vh;
+}
+
+.perks-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.contact-container {
+  width: 100vw;
+  height: 60vh;
+}
+
+.pricing-container {
+  width: 100vw;
+  height: 170vh;
+  background-color: black;
+}
+
+.text-container {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  padding-left: 10%;
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.list-container {
+  margin-top: -30px;
+  color: white;
+}
+
+.plan-container {
+  text-align: center;
+}
+
+.basic-plan,
+.advanced-plan,
+.pro-plan {
+  display: inline-block;
+  padding: 0px 100px;
+}
+
+.basic-plan {
+  color: #fb3640;
+}
+.basic {
+  background-color: #fb3640;
+  font-size: 1em;
+  color: white;
+}
+
+.advanced-plan {
+  color: #fea82f;
+}
+.advanced {
+  background-color: #fea82f;
+  font-size: 1em;
+  color: white;
+}
+
+.pro-plan {
+  color: #3edbf0;
+}
+.pro {
+  background-color: #3edbf0;
+  font-size: 1em;
+  color: white;
+}
+
+.basic-line,
+.advanced-line,
+.pro-line {
+  margin-top: -50px;
+}
+
+.basic-monthly,
+.advanced-monthly,
+.pro-monthly,
+.basic-price,
+.advanced-price,
+.pro-price {
+  margin-top: -20px;
+}
+
+.select-plan {
+  width: 200px;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.perks-container {
+  background-color: #f05945;
+  text-align: center;
+}
+
+.column1,
+.column2,
+.column3 {
+  display: inline-block;
+  max-width: 18vw;
+  color: white;
+  padding: 0px 55px;
+  text-align: left;
+}
+
+.description {
+  color: black;
+}
+
+.perks-line {
+  margin-top: -75px;
+}
+
+.contact-container {
+  background-color: #6a65d8;
+  margin-top: -35px;
+}
+
+.email {
+  margin-left: 10vw;
+  padding-top: 120px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.footer-name {
+  text-align: center;
+  margin-top: 70px;
+  color: white;
+  font-size: 2rem;
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+}
