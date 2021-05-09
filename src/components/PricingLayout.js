@@ -11,7 +11,7 @@ function PricingLayout() {
       <div className="plan-container">
         <div className="basic-plan">
           <div>
-            <h2 className="subtext-font">BASIC</h2>
+            <h2 className="subtext-font basic-title">BASIC</h2>
             <h2 className="subtext-font basic-line">_____________</h2>
             <h2 className="subtext-font basic-monthly">MONTHLY</h2>
           </div>
@@ -28,7 +28,7 @@ function PricingLayout() {
         </div>
         <div className="advanced-plan">
           <div>
-            <h2 className="subtext-font">ADVANCED</h2>
+            <h2 className="subtext-font advanced-title">ADVANCED</h2>
             <h2 className="subtext-font advanced-line">_____________</h2>
             <h2 className="subtext-font advanced-monthly">MONTHLY</h2>
           </div>
@@ -45,7 +45,7 @@ function PricingLayout() {
         </div>
         <div className="pro-plan">
           <div>
-            <h2 className="subtext-font">PRO</h2>
+            <h2 className="subtext-font pro-title">PRO</h2>
             <h2 className="subtext-font pro-line">_____________</h2>
             <h2 className="subtext-font pro-monthly">MONTHLY</h2>
           </div>
