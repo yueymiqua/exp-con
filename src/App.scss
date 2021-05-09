@@ -19,6 +19,53 @@ $bg-color: #222;
   text-align: center;
 }
 
+// Navbar styling
+.navBar {
+  position: relative;
+}
+
+.navBar button {
+  position: fixed;
+  left: 40px;
+  top: 40px;
+  z-index: 10;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.menuNav {
+  overflow-y: scroll;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  background: transparent;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 0;
+  overflow: hidden;
+  max-width: 290px;
+  z-index: 9;
+}
+
+.menuNav.showMenu {
+  width: 100%;
+}
+
+.page-link {
+  display: block;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #3fffd2;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menuNav li:first-child {
+  margin-top: 7rem;
+}
+
 .slideshow {
   position: relative;
   margin: 0 auto;
@@ -63,6 +110,7 @@ $bg-color: #222;
 
 .landing-page-header {
   position: relative;
+  text-align: center;
   margin-top: -180px;
   color: white;
 }
@@ -131,10 +179,18 @@ $bg-color: #222;
     height: 0;
     animation: mix 5s linear infinite;
   }
+  z-index: 1;
 }
 
 .button {
   margin-top: -200px;
+  text-align: center;
+}
+
+.perks-button {
+  text-align: right;
+  padding-top: 5vw;
+  padding-bottom: -5vw;
 }
 
 @keyframes mix {
@@ -209,13 +265,18 @@ a {
   cursor: pointer;
 }
 
+.demo-button:hover {
+  color: ivory;
+  background: #fb3640;
+}
+
 .audio-container {
   z-index: 1;
 }
 .play-music-button {
   border-radius: 50%;
   padding: 4vh;
-  background-color: orangered;
+  background-color: #ce1212;
   color: white;
   font-size: 2rem;
   margin-top: -5vw;
@@ -223,9 +284,15 @@ a {
   cursor: pointer;
   max-width: 17vw;
 }
+.play-music-button:hover {
+  background-color: #810000;
+}
 
 .playing {
-  background-color: green;
+  background-color: #34656d;
+}
+.playing:hover {
+  background-color: #02475e;
 }
 
 img[alt='speakerSvg'] {
@@ -286,6 +353,9 @@ img[alt='speakerSvg'] {
   font-size: 1em;
   color: white;
 }
+.basic:hover {
+  background-color: #be0000;
+}
 
 .advanced-plan {
   color: #fea82f;
@@ -295,6 +365,9 @@ img[alt='speakerSvg'] {
   font-size: 1em;
   color: white;
 }
+.advanced:hover {
+  background-color: #c06014;
+}
 
 .pro-plan {
   color: #3edbf0;
@@ -303,6 +376,9 @@ img[alt='speakerSvg'] {
   background-color: #3edbf0;
   font-size: 1em;
   color: white;
+}
+.pro:hover {
+  background-color: #1597bb;
 }
 
 .basic-line,
@@ -324,6 +400,7 @@ img[alt='speakerSvg'] {
   width: 200px;
   padding: 15px;
   border-radius: 25px;
+  cursor: pointer;
 }
 
 .perks-container {
@@ -371,4 +448,40 @@ img[alt='speakerSvg'] {
 .copyright {
   text-align: center;
   color: white;
+}
+
+.teal {
+  color: #3edbf0;
+}
+
+.red {
+  color: #fb3640;
+}
+
+.yellow {
+  color: #fea82f;
+}
+
+.white {
+  color: white;
+}
+
+.dark {
+  background-color: black;
+}
+
+.text-container-dark {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  padding-left: 10%;
+  position: relative;
+  text-align: left;
+  color: white;
+  margin-top: -100px;
+}
+
+.front-row-seats-container {
+  background: #ffc93c;
+  width: 100vw;
+  height: 100vh;
 }
